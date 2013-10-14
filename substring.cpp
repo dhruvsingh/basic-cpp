@@ -1,6 +1,5 @@
         #include<iostream>
         #include<string.h>
-        #include<stdio.h>
         
         using namespace std;
         
@@ -19,17 +18,17 @@
 	        for(k=0,j=i;k<lensub;j++,k++)
 		   str1[k]=string[j];
     	    str1[k]='\0';
-    		if((strcmp(substr,str1))==0)
-    		{
-    		 cout<<"\n\nSubstring found at location :"<<i+1;
-             flag=0;
-    		 break;
-    		}
-    		else
-    		 i++;
+    	    if((strcmp(substr,str1))==0)
+    	    {
+    	      cout<<"\n\nSubstring found at location :"<<i+1;
+              flag=0;
+    	      break;
+    	    }
+    	    else
+    	     i++;
     	}
         if(flag!=0)
         cout<<"\n\nSub-string not found!";
-		getchar();
+	getchar();
         return 0;
         }
