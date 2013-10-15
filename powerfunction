@@ -1,0 +1,26 @@
+#include<iostream>
+#include<conio.h>
+
+using namespace std;
+
+int power(int x, int y)
+{
+int ans=1;
+for(int i =1; i<=y;i++)
+ans*=x;
+return ans;
+}
+
+int main()
+{
+int x,y;
+clrscr();
+cout<<"\n\nEnter the number";
+cin>>x;
+cout<<"\n\nEnter the power";
+cin>>y;
+ans=power(x,y);
+cout<<"\n\n "<<x<<"Raised to power  "<<y<<" is : "<<ans;
+getch();
+return 0;
+}
